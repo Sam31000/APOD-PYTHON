@@ -13,6 +13,9 @@ class Config:
 
     # Here using the connection string to your mongoDB database
     connectionString = '##Set you connection string##'
+    
+    #The logfile path
+    logPath = './'
 
 #Put here your PRODUCTION configuration
 class Production (Config):
@@ -32,6 +35,8 @@ class Production (Config):
 
     connectionString = '##YourProductionConnectionString##'
 
+    logPath = './'
+
 #Put here your TEST configuration
 class Test (Config):
     apiUrl = 'https://api.nasa.gov/planetary/apod'
@@ -49,6 +54,8 @@ class Test (Config):
     dataBase = '##YourTestDatabase##'
 
     connectionString = '##YourTestConnectionString##'
+
+    logPath = './'
     
 #Put here your DEVELOPMENT configuration
 class Development (Config):
@@ -67,3 +74,5 @@ class Development (Config):
     dataBase = '##YourDevelopmentDatabase##'
 
     connectionString = '##YourDevelopmentConnectionString##'
+
+    logPath = './'

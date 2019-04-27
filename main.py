@@ -17,6 +17,7 @@ from mongoengine import connect, StringField, Document, DateTimeField
 from datetime import datetime,timedelta
 import sys
 import requests
+import logging
 
 #Contain all the script configuration
 import config
@@ -24,12 +25,14 @@ import config
 #Mongodbengine document definition of an APOD.
 import APOD
 
-
 # Using APOD open API to retreive data
 apiUrl = config.Production.apiUrl
 
 # Setting your api key array
 APIKeys =  config.Production.APIKeys
+
+# Setting the log configuration
+logging.basicConfig(filename='{}Apod_{}.log'.format(config.Production.logPath, datetime.now().strftime("%Y-%m-%d")),level=logging.DEBUG)
 
 # Connection to the database.
 connect(config.Production.dataBase, host=config.Production.connectionString)
@@ -84,6 +87,8 @@ while currentDate.strftime("%Y-%m-%d") != datetime.now().strftime("%Y-%m-%d") :
         print ("Date done : {}".format(currentDate))
     else : #If there is an error retreiving the APOD error is logged and the next APOD is treated
         print ("No Apod found with a compliante format on : {}".format(currentDate))
+        logging.debug('{} : Error when trying to retreive APOD for the date "{}" with api key : {}'.format(datetime.now().strftime("%m/%d/%Y, %H:%M:%S"), currentDate, APIKeys[apiKeyIndex]))
+        logging.debug(data)
 
     #Go to the next date
     currentDate = (currentDate + timedelta(days=1))

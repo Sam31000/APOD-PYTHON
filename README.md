@@ -14,6 +14,8 @@ Set you own configuration in the config.example.py file and rename it as config.
 ```sh
 python main.py
 ```
+A log file named "Apod_[Year]_[Month]_[Day].log" will be generated in the path set in the config.py file 
+
 # Licence
 
 GPL
