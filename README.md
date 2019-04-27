@@ -19,5 +19,5 @@ python main.py
 GPL
 
 # Author
-Sami CHIDIAC 
+Sami CHIDIAC  
 Contact : sami.chidiac.development@gmail.com
