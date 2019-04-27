@@ -10,7 +10,7 @@ On mac Os => Certificate pre-requiste :
 - Go in  /Applications/Python X.X and execute "Install Certificates.command" to be able to request NASA open API
 
 # Usage
-Set you own configuration in the config.py file and then you are ready to execute :
+Set you own configuration in the config.example.py file and rename it as config.py then you are ready to execute :
 ```sh
 python main.py
 ```
