@@ -1,6 +1,6 @@
 #Put here all attributes needed to configure your script
 class Config:
-    # Using APOD open API to retreive data
+    # Using APOD open API to retrieve data
     apiUrl = 'https://api.nasa.gov/planetary/apod'
 
     # You can specify several API Keys if you have many.
