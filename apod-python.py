@@ -37,6 +37,7 @@ for opt, arg in options:
         print ("\n-- APOD-PYTHON version {} --".format(__version__))
         print ("\nThis script retrieve data from NASA Astronomic Picture Of the Day (APOD) API and saves them into a mongodb database.")
         print ("By default the script check the APOD in the database with the nearest date of today and start to retrieve data since it")
+        print ("\nUsage : python python-apod.py")
         print ("\n\tOptions :")
         print ("\t\t-h, --help\tDisplay this help")
         print ("\t\t-d, --delta\tWill check since 6/16/1995 if there is an APOD saved in the database. If not it will rertrieve it from NASA APOD Api\n")
