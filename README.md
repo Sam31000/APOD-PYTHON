@@ -14,7 +14,7 @@ Set you own configuration in the config.example.py file and rename it as config.
 ```sh
 python apod-python.py
 python apod-python.py -h #To dsiplay Help
-python apod-pyton.py -d #To perfom a delta of your current database and the APOD available
+python apod-python.py -d #To perfom a delta of your current database and the APOD available
 ```
 A log file named "Apod_[Year]_[Month]_[Day].log" will be generated in the path set in the config.py file 
 
