@@ -5,6 +5,7 @@ The ORM used as a data layer is mongoengine.
 ```sh
 pip install --upgrade pip (Optional) 
 pip install mongoengine 
+pip install requests 
  ```
 On mac Os => Certificate pre-requiste : 
 - Go in  /Applications/Python X.X and execute "Install Certificates.command" to be able to request NASA open API
