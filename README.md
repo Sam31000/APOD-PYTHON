@@ -26,4 +26,4 @@ GPL
 # Author
 Sami CHIDIAC  
 Contact : sami.chidiac.development@gmail.com  
-Github : https://github.com/Sam31000/
+Github : <https://github.com/Sam31000/>
