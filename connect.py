@@ -23,7 +23,6 @@ apiUrl = 'https://api.nasa.gov/planetary/apod'
 # You can only perfom 1000 request by hour with an API KEY.
 # You can get your own API Key here : https://api.nasa.gov/index.html#apply-for-an-api-key
 APIKeys = ['qD7zE6W35kPISoRM0o9srmGTldFuzjt9nrfkEWs7', 
-            'Bz1nWv4Jjitq6ua2HFThkcIGkNQKHOkbYY3lDi0Y', #<-My key
             'UGtXPeXRazFiX8WJIlnon5x8Npbz1qJugdRJq76h',
             '5B6oJsSCQyekXZvNOKpsUhRPl1e7FHqjIAyHpybk',
             'qD7zE6W35kPISoRM0o9srmGTldFuzjt9nrfkEWs7', 
